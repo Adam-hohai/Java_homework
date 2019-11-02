@@ -1,0 +1,32 @@
+<object-stream>
+  <hhuc.javabean.ClassInfo>
+    <className>java.lang.String</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.lang.Runtime</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.awt.Color</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.lang.Object</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.lang.Object</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.awt.Button</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.awt.Choice</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.awt.Event</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.awt.Font</className>
+  </hhuc.javabean.ClassInfo>
+  <hhuc.javabean.ClassInfo>
+    <className>java.applet.Applet</className>
+  </hhuc.javabean.ClassInfo>
+</object-stream>

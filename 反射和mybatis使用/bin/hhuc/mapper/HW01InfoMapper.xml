@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hhuc.mapper.HW01InfoMapper">
+	<insert id="insertClassInfo"
+		parameterType="hhuc.javabean.ClassInfo" useGeneratedKeys="true"
+		keyProperty="classId">
+		insert into ClassInfo(className)
+		values ( #{className} )
+	</insert>
+	<insert id="insertMethodInfo"
+		parameterType="hhuc.javabean.MethodInfo" useGeneratedKeys="true"
+		keyProperty="methodId">
+		insert into MethodInfo(classId, methodName, returnType)
+		values ( #{classId}, #{methodName}, #{returnType} )
+	</insert>
+	<insert id="insertParamInfo"
+		parameterType="hhuc.javabean.ParamInfo" useGeneratedKeys="true"
+		keyProperty="paramId">
+		insert into ParamInfo(methodId, paramIndex, paramType)
+		values ( #{methodId}, #{paramIndex}, #{paramType} )
+	</insert>
+	
+    <select id="findClassId" resultType="long">
+       select classId from ClassInfo where className = #{className}
+    </select>
+	<select id="findMethodId" resultType="long">
+	<!-- 这个max()聚集函数是关键，因为我在后面要获取参数表里的methodId这个外键，而通过methodName会检索到多个id，也就是相同方法名有多个方法id，而这个id只要取最大的就一定对了 -->
+       select max(methodId) from MethodInfo where methodName = #{methodName}
+    </select>
+    
+    <select id="selectClassInfo" resultType="hhuc.javabean.ClassInfo">
+    	select * from ClassInfo
+    </select>
+    <select id="selectMethodInfo" resultType="hhuc.javabean.MethodInfo">
+    	select * from MethodInfo
+    </select>
+    <select id="selectParamInfo" resultType="hhuc.javabean.ParamInfo">
+    	select * from ParamInfo
+    </select>
+    
+
+</mapper>

@@ -1,0 +1,1 @@
+{"className":"java.lang.String"}{"className":"java.lang.Runtime"}{"className":"java.awt.Color"}{"className":"java.lang.Object"}{"className":"java.lang.Object"}{"className":"java.awt.Button"}{"className":"java.awt.Choice"}{"className":"java.awt.Event"}{"className":"java.awt.Font"}{"className":"java.applet.Applet"}
